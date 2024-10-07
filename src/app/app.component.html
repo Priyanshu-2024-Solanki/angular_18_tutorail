@@ -1,39 +1,52 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" routerLink="add-emp">Add Employee</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="emp-list">Employee List</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" routerLink="structural-dir" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Structural Dir
-            </a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" routerLink="attribute-dir" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Attribute Dir
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true" routerLink="data-binding">Data Binding Component</a>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="javascript:void(0)">Logo</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto"> 
+        <li class="nav-item" >
+          <a class="nav-link" routerLink="data-binding">Data-Binding</a>
+        </li>
+        <li class="nav-item dropdown"  >
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Directive</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="structural-dir">Structiral Directive</a></li>
+            <li><a class="dropdown-item" routerLink="attribute-dir">Attribute Directive</a></li> 
+          </ul>
+        </li>
+        <li class="nav-item dropdown"  >
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Control Flow</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="if-else"> <span>&#64;</span>if</a></li>
+            <li><a class="dropdown-item" routerLink="for"> <span>&#64;</span>for, switch</a></li> 
+          </ul>
+        </li> 
+        <li class="nav-item" >
+          <a class="nav-link" routerLink="pipe"> Pipe</a>
+        </li>
+        <li class="nav-item dropdown"  >
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Forms</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="template">Template Form</a></li>
+            <li><a class="dropdown-item" routerLink="reactive">Reactive Form</a></li> 
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">API -HttpClient</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="template" routerLink="get-api">Get API</a></li>
+            <li><a class="dropdown-item" routerLink="reactive" routerLink="post-api">Post API</a></li> 
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <!-- <button class="btn btn-primary" type="button">Search</button> -->
+      </form>
     </div>
-  </nav>
-
-  <div class="container">
-       <router-outlet></router-outlet>
   </div>
+</nav> 
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
